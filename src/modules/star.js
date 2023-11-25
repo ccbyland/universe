@@ -61,7 +61,7 @@ function analysisStars(list) {
       radius,
       isLuminous,
       haloTextureImg,
-      textureImg: `/resources/${textureImg}`,
+      textureImg,
       satelliteList,
     });
     // 空间位置
@@ -120,7 +120,7 @@ function makeStar({
   // 几何图形
   const sphere = getSphereGeometry(radius, 50, 50);
   // 纹理
-  const texture = TextureLoader.load(textureImg);
+  const texture = TextureLoader.load(new URL(`../resources/${textureImg}`, import.meta.url).href);
   // 材质
   const material = getMaterial('MeshLambert', getMaterialOpt(isLuminous, texture));
   // 生成网格
@@ -183,7 +183,7 @@ function getHalo(haloTextureImg, radius) {
   // 几何图形
   const torus = new THREE.TorusGeometry(radius + 90, 30, 50, 50);
   // 材质
-  const texture = TextureLoader.load(`resources/${haloTextureImg}`);
+  const texture = TextureLoader.load(new URL(`../resources/${haloTextureImg}`, import.meta.url).href);
   const material = new THREE.MeshLambertMaterial({
     // 材质的放射（光）颜色，基本上是不受其他光照影响的固有颜色，默认为黑色
     emissive: '#666666',
@@ -231,7 +231,7 @@ function getSubsetTrack(satellite) {
     radius,
     isLuminous,
     haloTextureImg,
-    textureImg: `/resources/${textureImg}`,
+    textureImg,
     satelliteList,
   });
   // 地球半径 + 月球半径 + 地月距离

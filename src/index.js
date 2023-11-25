@@ -10,7 +10,7 @@ import { init as initAirship, update as updateAirship } from './modules/airship'
 import { initStats } from './modules/monitor'
 import { add as addStar, rotation as starRotation } from './modules/star'
 import { globalConfig } from './globalConfig'
-import g_2k_stars from "/resources/2k_stars.jpeg";
+import g_2k_stars from "./resources/2k_stars.jpeg";
 
 // 全局变量
 const APP = document.getElementById('app') //场景

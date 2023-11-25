@@ -10,7 +10,7 @@ import {
   getMaterial
 } from "../common/material";
 import { globalConfig } from '../globalConfig';
-import g_2k_sun from "/resources/2k_sun.jpeg";
+import g_2k_sun from "../resources/2k_sun.jpeg";
 
 export function add(SCENE) {
 
