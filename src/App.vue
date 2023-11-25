@@ -1,13 +1,13 @@
 <script setup>
 import './index'
 import { reactive, ref } from 'vue'
-import { ElButton, ElRadio, ElSwitch, ElDrawer, ElDivider, ElInputNumber } from 'element-plus'
+import { ElButton, ElRadio, ElRadioGroup, ElSwitch, ElDrawer, ElDivider, ElInputNumber } from 'element-plus'
 import { setGolbalConfig } from './globalConfig'
 const drawer = ref(false)
 
 const formData = reactive({
-    controlMode: '1',
-    orbitalMode: '1',
+    controlMode: 1,
+    orbitalMode: 1,
     showPlanet: true,
     starTurn: true,
     showHelper: false,
