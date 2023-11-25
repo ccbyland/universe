@@ -6,8 +6,8 @@ import { setGolbalConfig } from './globalConfig'
 const drawer = ref(false)
 
 const formData = reactive({
-    controlMode: 1,
-    orbitalMode: 1,
+    controlMode: '1',
+    orbitalMode: '1',
     showPlanet: true,
     starTurn: true,
     showHelper: false,
