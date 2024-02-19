@@ -14,7 +14,7 @@ const formData = reactive({
     showLighting: true,
     showTrack: true,
     showSprite: true,
-    spriteCount: 10000
+    spriteCount: 5000
 })
 
 const change = () => {
@@ -82,8 +82,7 @@ initConfig()
         </div>
         <div class="mb-2 flex items-center text-sm">
             <div>满天星数量(0-100万)</div>
-            <el-input-number v-model="formData.spriteCount" :min="0" :max="1000000" :step="1000" @change="change" />
-            <!-- <el-slider v-model="formData.spriteCount" min="0" max="100000"  @change="change()"/> -->
+            <el-input-number v-model="formData.spriteCount" :min="0" :max="100000" :step="1000" @change="change" />
         </div>
         <div class="mb-2 flex items-center text-sm">
             <div>是否显示辅助线</div>

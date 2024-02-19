@@ -79,7 +79,7 @@ export const globalConfig = {
   /**
    * 满天星数量
    */
-  spriteCount: 10000,
+  spriteCount: 5000,
 
   /**
    * 碰撞阈值
