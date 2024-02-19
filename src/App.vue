@@ -81,7 +81,7 @@ initConfig()
             <el-switch v-model="formData.showSprite" @change="change()"></el-switch>
         </div>
         <div class="mb-2 flex items-center text-sm">
-            <div>满天星数量(0-100万)</div>
+            <div>满天星数量(0-10万)</div>
             <el-input-number v-model="formData.spriteCount" :min="0" :max="100000" :step="1000" @change="change" />
         </div>
         <div class="mb-2 flex items-center text-sm">
